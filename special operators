@@ -1,0 +1,32 @@
+# Identity Operators
+
+# Define variables
+x = [1, 2, 3]
+y = [1, 2, 3]
+z = x
+
+# Identity comparison
+print(f"x is y: {x is y}")       # False, x and y are different objects
+print(f"x is z: {x is z}")       # True, x and z refer to the same object
+print(f"x is not y: {x is not y}")   # True, x and y are different objects
+print(f"x is not z: {x is not z}")   # False, x and z refer to the same object
+
+# Membership Operators
+
+# Define a sequence and a value
+sequence = [1, 2, 3, 4, 5]
+value = 3
+value_not_in = 10
+
+# Membership checks
+print(f"{value} in sequence: {value in sequence}")                   # True, value is in the list
+print(f"{value_not_in} in sequence: {value_not_in in sequence}")     # False, value_not_in is not in the list
+print(f"{value} not in sequence: {value not in sequence}")           # False, value is in the list
+print(f"{value_not_in} not in sequence: {value_not_in not in sequence}")   # True, value_not_in is not in the list
+
+# Additional example with strings
+string = "Hello, World!"
+char = 'H'
+char_not_in = 'x'
+
+print(f"'{char}' in string")
